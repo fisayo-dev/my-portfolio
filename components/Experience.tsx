@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Experience = () => {
@@ -38,7 +39,7 @@ const Experience = () => {
             <div className="w-full md:max-w-3xl mx-auto">
                 <div className="grid gap-4">
                     {experience.reverse().map((one,index) => (
-                        <div key={index} className="shadow-md border-[0.1rem] border-black/40 dark:border-white/20 rounded-2xl overflow-hidden">
+                        <Link href={one.website}  key={index} className="shadow-md cursor-pointer border-[0.1rem] hover:border-black/40 border-black/20 dark:hover:border-white/40 dark:border-white/20 rounded-2xl overflow-hidden">
                             <div className="flex p-4 items-center gap-4">
                                 <Image src={one.logo || "/globe.svg"} alt={one.company} height={50} width={50}/>
                                 <div className="grid gap-1">
@@ -47,7 +48,7 @@ const Experience = () => {
                                     <span className='text-sm'>{one.startDate} - {one.endDate}</span>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
