@@ -7,3 +7,18 @@ interface WorkExperience {
     startDate: string,
     endDate: string,
 }
+
+enum projectCategory {
+    'api',
+    'website',
+    'web app',
+    'bot',
+}
+
+interface WorkProjects {
+    title: string,
+    image: string,
+    description: string,
+    category: projectCategory,
+    link: string
+}
