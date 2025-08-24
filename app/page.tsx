@@ -1,3 +1,4 @@
+import Experience from '@/components/Experience'
 import Header from '@/components/Header'
 import Landing from '@/components/Landing'
 import React from 'react'
@@ -8,8 +9,9 @@ const page = () => {
       <div className='fixed w-full'>
         <Header />
       </div>
-      <div className='py-20 md:py-40'>
+      <div className='grid gap-5 md:gap-28 py-20 md:py-40'>
         <Landing />
+        <Experience />
       </div>
     </>
   )
