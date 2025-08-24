@@ -1,8 +1,9 @@
+import Header from '@/components/Header'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='dark:text-green-400'>page</div>
+    <Header />
   )
 }
 
