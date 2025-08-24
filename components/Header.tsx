@@ -10,7 +10,7 @@ const Header = () => {
         "socials"
     ]
   return (
-    <div className='backdrop-blur-lg'>
+    <div className=' backdrop-blur-lg'>
         <div className='app-container'>
             <div className="flex items-center justify-between py-6">
                 <div className="flex items-center space-x-8">
