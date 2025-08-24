@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 const Projects = () => {
@@ -58,7 +57,7 @@ const Projects = () => {
             <div className="w-full md:max-w-5xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {projects.reverse().map((one,index) => (
-                        <div key={index} className="shadow-md cursor-pointer border-[0.1rem] hover:border-black/40 border-black/20 dark:hover:border-white/40 dark:border-white/20 rounded-2xl overflow-hidden">
+                        <div key={index} className="shadow-md hover:dark:shadow-gray-800/40 cursor-pointer border-[0.1rem] hover:border-black/40 border-black/20 dark:hover:border-white/40 dark:border-white/20 rounded-2xl overflow-hidden">
                             <div className="p-6 items-center gap-2 space-y-3">
                                 <Image src={one.image || "/next.svg"} alt={one.title} height={200} width={200} className='dark:invert'/>
                                 <h2 className="md:text-clip text-xl font-bold">{one.title}</h2>
