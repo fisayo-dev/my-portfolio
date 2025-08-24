@@ -10,7 +10,7 @@ const page = () => {
       <div className='fixed w-full z-50'>
         <Header />
       </div>
-      <div className='grid gap-5 md:gap-28 py-20 md:py-40'>
+      <div className='grid gap-20 md:gap-28 py-20 md:py-40'>
         <Landing />
         <Experience />
         <Projects />

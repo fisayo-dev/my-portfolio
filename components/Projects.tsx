@@ -20,7 +20,7 @@ const Projects = () => {
         },
         {
             image: "",
-            title: "Code Assitant",
+            title: "Code Assistant",
             description: "The website of a code assistant (frontend) ",
             link: "https://codebox-ai-assistant.vercel.app/",
             category: "website"
@@ -56,7 +56,7 @@ const Projects = () => {
                 <p>Here are my top projects.</p>
             </div>
             <div className="w-full md:max-w-5xl mx-auto">
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {projects.reverse().map((one,index) => (
                         <div  key={index} className="shadow-md cursor-pointer border-[0.1rem] hover:border-black/40 border-black/20 dark:hover:border-white/40 dark:border-white/20 rounded-2xl overflow-hidden">
                             <div className="grid p-6 items-center gap-6">
