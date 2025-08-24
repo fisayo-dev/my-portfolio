@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 
@@ -14,7 +15,7 @@ const Header = () => {
         <div className='app-container'>
             <div className="flex items-center justify-between py-6">
                 <div className="flex items-center space-x-8">
-                    <h2 className='text-2xl font-bold'>Fisayo Obadina</h2>
+                    <Link href="/" className='text-2xl font-bold'>Fisayo Obadina</Link>
                     <div className="hidden md:flex space-x-4 items-end">
                         {headerLinks.map((link,index) => (
                             <span key={index} className='text-sm capitalize cursor-pointer dark:hover:text-white dark:text-white/70 text-black/70 hover:text-black'>{link}</span>   
