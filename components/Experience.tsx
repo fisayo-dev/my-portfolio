@@ -43,11 +43,11 @@ const Experience = () => {
                             <div className="flex p-4 items-center gap-6">
                                 <Image src={one.logo || "/globe.svg"} alt={one.company} height={50} width={50}/>
                                 <div className="grid gap-1 w-full">
-                                    <h2 className="text-xl font-bold">{one.company}</h2>
+                                    <h2 className="md:text-clip text-xl font-bold">{one.company}</h2>
                                     <p className='text-sm'>{one.role}</p>
                                     <span className='text-sm'>{one.startDate} - {one.endDate}</span>
                                 </div>
-                                <Image src="/file.svg" alt={one.website} height={30} width={30}/>
+                                <Image src="/file.svg" alt={one.website} height={30} width={30} className='md:block hidden'/>
                             </div>
                         </Link>
                     ))}
