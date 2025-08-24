@@ -20,7 +20,7 @@ const Projects = () => {
         {
             image: "",
             title: "Code Assistant",
-            description: "The website of a code assistant (frontend) ",
+            description: "The website of a code assistant (frontend)",
             link: "https://codebox-ai-assistant.vercel.app/",
             category: "website"
         },
@@ -33,17 +33,17 @@ const Projects = () => {
         },
         {
             image: "",
-            title: "Shopapp API",
-            description: "An api designed for shopping website with admin functionality",
+            title: "Bookmark Hub",
+            description: "A web app that stores your favourite website link",
             link: "https://www.github.com",
-            category: "api"
+            category: "web app"
         },
         {
             image: "",
             title: "Business Review bot",
             description: "A telegram bot that register business and helps them advertise themselves. ",
             link: "http://t.me/bot",
-            category: "web app"
+            category: "bot"
         },
         
     ]
@@ -61,7 +61,7 @@ const Projects = () => {
                             <div className="p-6 items-center gap-2 space-y-3">
                                 <Image src={one.image || "/next.svg"} alt={one.title} height={200} width={200} className='dark:invert'/>
                                 <h2 className="md:text-clip text-xl font-bold">{one.title}</h2>
-                                <p className='text-sm'>{one.description.length > 50 ? `${one.description.substring(0,50)}...` : one.description}</p>
+                                <p className='text-sm'>{one.description.length > 50 ? `${one.description.substring(0,50)}...` : `${one.description}.`}</p>
                                 <span className='text-sm p-2 bg-black/20 dark:bg-white/20 rounded-full '>{one.category}</span>
                             </div>
                         </div>
