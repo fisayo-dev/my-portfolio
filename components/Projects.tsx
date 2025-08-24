@@ -9,7 +9,42 @@ const Projects = () => {
             title: "Abscissa",
             description: "A mathematical asstant for students",
             link: "http://abscissa.vercel.app/",
+            category: "web app"
+        },
+        {
+            image: "",
+            title: "SaveIdea",
+            description: "A Full-stack app that saves users ideas",
+            link: "http://saveidea.vercel.app/",
+            category: "web app"
+        },
+        {
+            image: "",
+            title: "Code Assitant",
+            description: "The website of a code assistant (frontend) ",
+            link: "https://codebox-ai-assistant.vercel.app/",
             category: "website"
+        },
+        {
+            image: "",
+            title: "Shopapp API",
+            description: "An api designed for shopping website with admin functionality",
+            link: "https://www.github.com",
+            category: "api"
+        },
+        {
+            image: "",
+            title: "Shopapp API",
+            description: "An api designed for shopping website with admin functionality",
+            link: "https://www.github.com",
+            category: "api"
+        },
+        {
+            image: "",
+            title: "Business Review bot",
+            description: "A telegram bot that register business and helps them advertise themselves. ",
+            link: "http://t.me/bot",
+            category: "web app"
         },
         
     ]
@@ -20,20 +55,18 @@ const Projects = () => {
                 <h2 className="text-4xl font-bold">Projects</h2>
                 <p>Here are my top projects.</p>
             </div>
-            <div className="w-full md:max-w-2xl mx-auto">
-                <div className="grid gap-6">
+            <div className="w-full md:max-w-5xl mx-auto">
+                <div className="grid grid-cols-3 gap-6">
                     {projects.reverse().map((one,index) => (
-                        <Link href={one.website}  key={index} className="shadow-md cursor-pointer border-[0.1rem] hover:border-black/40 border-black/20 dark:hover:border-white/40 dark:border-white/20 rounded-2xl overflow-hidden">
-                            <div className="flex p-4 items-center gap-6">
-                                <Image src={one.logo || "/globe.svg"} alt={one.company} height={50} width={50}/>
+                        <div  key={index} className="shadow-md cursor-pointer border-[0.1rem] hover:border-black/40 border-black/20 dark:hover:border-white/40 dark:border-white/20 rounded-2xl overflow-hidden">
+                            <div className="grid p-6 items-center gap-6">
+                                <Image src={one.image || "/next.svg"} alt={one.title} height={200} width={200} className='dark:invert'/>
                                 <div className="grid gap-1 w-full">
-                                    <h2 className="md:text-clip text-xl font-bold">{one.company}</h2>
-                                    <p className='text-sm'>{one.role}</p>
-                                    <span className='text-sm'>{one.startDate} - {one.endDate}</span>
+                                    <h2 className="md:text-clip text-xl font-bold">{one.title}</h2>
+                                    <p className='text-sm'>{one.description}</p>
                                 </div>
-                                <Image src="/file.svg" alt={one.website} height={30} width={30} className='md:block hidden'/>
                             </div>
-                        </Link>
+                        </div>
                     ))}
                 </div>
             </div>
