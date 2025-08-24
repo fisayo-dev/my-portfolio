@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Projects = () => {
@@ -62,6 +63,7 @@ const Projects = () => {
                                 <Image src={one.image || "/next.svg"} alt={one.title} height={200} width={200} className='dark:invert'/>
                                 <h2 className="md:text-clip text-xl font-bold">{one.title}</h2>
                                 <p className='text-sm'>{one.description.length > 50 ? `${one.description.substring(0,50)}...` : `${one.description}.`}</p>
+                                <Link href={one.link} className='text-sm hover:text-black/80 hover:dark:text-white/70'>Visit </Link>
                                 <span className='text-sm p-2 bg-black/20 dark:bg-white/20 rounded-full '>{one.category}</span>
                             </div>
                         </div>
