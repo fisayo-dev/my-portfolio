@@ -36,17 +36,18 @@ const Experience = () => {
                 <h2 className="text-4xl font-bold">Experience</h2>
                 <p>For the past 5 years I have displayed excellence at these companies.</p>
             </div>
-            <div className="w-full md:max-w-3xl mx-auto">
+            <div className="w-full md:max-w-2xl mx-auto">
                 <div className="grid gap-4">
                     {experience.reverse().map((one,index) => (
                         <Link href={one.website}  key={index} className="shadow-md cursor-pointer border-[0.1rem] hover:border-black/40 border-black/20 dark:hover:border-white/40 dark:border-white/20 rounded-2xl overflow-hidden">
-                            <div className="flex p-4 items-center gap-4">
+                            <div className="flex p-4 items-center gap-6">
                                 <Image src={one.logo || "/globe.svg"} alt={one.company} height={50} width={50}/>
-                                <div className="grid gap-1">
+                                <div className="grid gap-1 w-full">
                                     <h2 className="text-xl font-bold">{one.company}</h2>
-                                    <p>{one.role}</p>
+                                    <p className='text-sm'>{one.role}</p>
                                     <span className='text-sm'>{one.startDate} - {one.endDate}</span>
                                 </div>
+                                <Image src="/file.svg" alt={one.website} height={30} width={30}/>
                             </div>
                         </Link>
                     ))}
