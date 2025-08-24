@@ -8,7 +8,7 @@ const page = () => {
       <div className='fixed w-full'>
         <Header />
       </div>
-      <div className='py-40'>
+      <div className='py-20 md:py-40'>
         <Landing />
       </div>
     </>
