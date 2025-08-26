@@ -3,7 +3,7 @@ import localFont from 'next/font/local'
 import "./globals.css";
 
 const jetBrainsMono = localFont({
-  src: '../public/fonts/JETBRAINSMONONL-REGULAR.ttf',
+  src: '../public/fonts/JETBRAINSMONO-REGULAR.ttf',
   variable: "--font-jetbrains-mono"
 })
 
