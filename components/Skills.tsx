@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const Skills = () => {
-    const projects: Skills[] = [
+    const projects = [
         {
             name: "JavaScript",
             image: "@mmsdl"

@@ -19,6 +19,6 @@ interface WorkProjects {
     title: string,
     image: string,
     description: string,
-    category: projectCategory,
+    category: "api"  | "website" | "web app" | "bot",
     link: string
 }
